@@ -17,20 +17,20 @@ public class StudentInfo {
         Scanner scanner = new Scanner(System.in);
         
         // Asking user for input
-        System.out.print("Enter Student's Name:");
+        System.out.print("Enter Student's Name: ");
         String name = scanner.nextLine();
         
-        System.out.print("Enter Student's Age:");
+        System.out.print("Enter Student's Age: ");
         int age = scanner.nextInt();
         
-        System.out.print("Enter Student's GWA [e.g 1.00, 1.25, ..., 3.00, 5.00]:");
+        System.out.print("Enter Student's GWA [e.g 1.00, 1.25, ..., 3.00, 5.00]: ");
         double gwa = scanner.nextDouble();
         
         scanner.nextLine(); // consume leftover newline
-        System.out.print("Enter Student's Course:");
+        System.out.print("Enter Student's Course: ");
         String course = scanner.nextLine();
         
-        System.out.print("Is the student enrolled? [Y]-Yes [N]-No:");
+        System.out.print("Is the student enrolled? [Y]-Yes [N]-No: ");
         String enrolledInput = scanner.nextLine().trim().toUpperCase();
         boolean isEnrolled = enrolledInput.equals("Y");
         
@@ -61,7 +61,7 @@ public class StudentInfo {
         }
         
         // Displaying Student's Information
-        System.out.println("====== Student Information ======");
+        System.out.println("\n====== Student Information ======");
         System.out.println("Name: " + name);
         System.out.println("Age: " + age + " yrs old");
         System.out.println("GWA: " + gwa);
