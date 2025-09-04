@@ -20,15 +20,13 @@ public class StudentData {
         double grade = 1.5;
         boolean isEnrolled = true;
         
+        System.out.println("===== Student Information =====");
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
         System.out.println("Grade: " + grade);
-        
-        if (isEnrolled){
-            System.out.println("Enrolled: Yes");
-        } else {
-            System.out.println("Enrolled: No");
+        System.out.println("Enrolled Status: " + (isEnrolled ? "Enrolled" : "Not Enrolled"));
+
         }
     }
-    
-}
+}    
+
