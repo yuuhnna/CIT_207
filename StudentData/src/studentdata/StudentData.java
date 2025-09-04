@@ -9,24 +9,32 @@ package studentdata;
  * @author Yana
  */
 public class StudentData {
-
     /*
-     name(string), age(int), grade(double), isEnrolled(boolean)
+    This program stores and displays student information
+    Attributes:
+        - name (String)
+        - age (int)
+        -  grade (double)
+        - isEnrolled (boolean)
     */
     
     public static void main(String[] args) {
-        String name = "Allanah";
-        int age = 19;
-        double grade = 1.5;
-        boolean isEnrolled = true;
+        //Declare and initialize student details
+        String name = "Allanah";    // student's name
+        int age = 19;               // student's age
+        double grade = 1.5;         // student's grade      
+        boolean isEnrolled = true;  // Enrollment status (true = enrolled, false = not enrolled)
         
+        // Print student information
         System.out.println("===== Student Information =====");
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Grade: " + grade);
-        System.out.println("Enrolled Status: " + (isEnrolled ? "Enrolled" : "Not Enrolled"));
-
-        }
+        System.out.println("Name: " + name);    // Display name
+        System.out.println("Age: " + age);      // Display age
+        System.out.println("Grade: " + grade);  // Display grade
+        
+        // Display enrollment status using ternary operator for cleaner output
+        System.out.println("Enrollment Status:" + (isEnrolled ? "Enrolled" : "Not Enrolled"));
     }
-}    
+        
+}
+    
 
